@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-11T23:25:28 IST" name="Default suite" finished-at="2021-08-11T23:25:40 IST" duration-ms="12598">
+    <groups>
+    </groups>
+    <test started-at="2021-08-11T23:25:28 IST" name="Default test" finished-at="2021-08-11T23:25:40 IST" duration-ms="12598">
+      <class name="SpacexAPITest.SpaceX.v1.TC_SpacexAPI">
+        <test-method signature="assertSuccess()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:28 IST" name="assertSuccess" finished-at="2021-08-11T23:25:33 IST" duration-ms="5132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertSuccess -->
+        <test-method signature="checkResponseTime()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:33 IST" name="checkResponseTime" finished-at="2021-08-11T23:25:34 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method signature="checkShipCount()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:34 IST" name="checkShipCount" finished-at="2021-08-11T23:25:35 IST" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkShipCount -->
+        <test-method signature="testGetRequestStatusCode()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:35 IST" name="testGetRequestStatusCode" finished-at="2021-08-11T23:25:36 IST" duration-ms="912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequestStatusCode -->
+        <test-method signature="verifyContent()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:36 IST" name="verifyContent" finished-at="2021-08-11T23:25:37 IST" duration-ms="867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContent -->
+        <test-method signature="verifyFairingCount()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:37 IST" name="verifyFairingCount" finished-at="2021-08-11T23:25:38 IST" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFairingCount -->
+        <test-method signature="verifyHeaders()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:38 IST" name="verifyHeaders" finished-at="2021-08-11T23:25:39 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaders -->
+        <test-method signature="verifyPayloadCount()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:39 IST" name="verifyPayloadCount" finished-at="2021-08-11T23:25:40 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPayloadCount -->
+        <test-method signature="verifyesponse()[pri:0, instance:SpacexAPITest.SpaceX.v1.TC_SpacexAPI@67080771]" started-at="2021-08-11T23:25:40 IST" name="verifyesponse" finished-at="2021-08-11T23:25:40 IST" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyesponse -->
+      </class> <!-- SpacexAPITest.SpaceX.v1.TC_SpacexAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
