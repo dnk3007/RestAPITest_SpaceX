@@ -31,6 +31,9 @@ public class TC_SpacexAPI {
 
 	public final String endPoint = "https://api.spacexdata.com/v4/launches/latest";
 
+	/**
+	 * To verify the headers
+	 */
 	@Test
 	public void verifyHeaders() {
 		Headers headers = given().contentType(ContentType.JSON).relaxedHTTPSValidation().when().get(endPoint).then()
@@ -40,6 +43,9 @@ public class TC_SpacexAPI {
 
 	}
 
+	/**
+	 * To check size of the response
+	 */
 	@Test
 	public void verifyContent() {
 		LinkedHashMap map = given().contentType(ContentType.JSON).relaxedHTTPSValidation().when().get(endPoint).then()
@@ -48,6 +54,9 @@ public class TC_SpacexAPI {
 		Assert.assertEquals(map.size(), 27);
 	}
 
+	/**
+	 * To check fairing count
+	 */
 	@Test
 	public void verifyFairingCount() {
 		LinkedHashMap<String, String> map = given().contentType(ContentType.JSON).relaxedHTTPSValidation().when()
@@ -56,12 +65,18 @@ public class TC_SpacexAPI {
 		Assert.assertEquals(map.size(), 4);
 	}
 
+	/**
+	 * To check the status code
+	 */
 	@Test
 	public void testGetRequestStatusCode() {
 		given().relaxedHTTPSValidation().when().get(endPoint).then().assertThat().statusCode(HttpStatus.SC_OK);
 
 	}
 
+	/**
+	 * To check success response parameter
+	 */
 	@Test
 	public void assertSuccess() {
 		Response response = given().relaxedHTTPSValidation().when().get(endPoint);
@@ -69,6 +84,9 @@ public class TC_SpacexAPI {
 
 	}
 
+	/**
+	 * To verify the if response is null
+	 */
 	@Test
 	public void verifyesponse() {
 		Response response = given().relaxedHTTPSValidation().when().get(endPoint);
@@ -77,6 +95,9 @@ public class TC_SpacexAPI {
 
 	}
 
+	/**
+	 * Verify response time
+	 */
 	@Test
 	public void checkResponseTime() {
 		Response response = given().relaxedHTTPSValidation().when().get(endPoint);
@@ -84,13 +105,18 @@ public class TC_SpacexAPI {
 		Assert.assertTrue(response.getTime() < 1000);
 	}
 
-
+	/**
+	 * To verify ship count
+	 */
 	@Test
 	public void checkShipCount() {
 		given().when().relaxedHTTPSValidation().get(endPoint).then().assertThat().body("ships", hasSize(1));
 
 	}
 
+	/**
+	 * To verify pay load count
+	 */
 	@Test
 	public void verifyPayloadCount() {
 		given().when().relaxedHTTPSValidation().get(endPoint).then().assertThat().body("payloads", hasSize(1));
